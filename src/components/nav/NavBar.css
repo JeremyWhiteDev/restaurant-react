@@ -35,6 +35,8 @@
     overflow-x: hidden;
 }
 
-.offcanvas-header, .offcanvas-body, btn {
+.offcanvas-header, .offcanvas-body, .btn {
     color: whitesmoke
 }
+
+
