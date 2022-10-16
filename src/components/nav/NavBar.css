@@ -3,9 +3,9 @@
     border-radius: 8px;
 }
 
-.offcanvas-body {
+/* .offcanvas-body {
     overflow-x: hidden;
-}
+} */
 
 .offcanvas-body>div> a {
     opacity: 0;
@@ -26,4 +26,15 @@
         filter: blur(0);
         transform: translateX(0%)
     }
+}
+
+.offcanvas-backdrop.show {
+    opacity: 1 !important;
+    /* backdrop-filter: blur(1px); */
+    background-color: rgba(0, 0, 0, .5);
+    overflow-x: hidden;
+}
+
+.offcanvas-header, .offcanvas-body, btn {
+    color: whitesmoke
 }

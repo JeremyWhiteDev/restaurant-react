@@ -43,7 +43,7 @@ export const NavBar = () => {
                   Offcanvas
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body>
+              <Offcanvas.Body variant="dark">
                 <Nav className="justify-content-start flex-grow-1 pe-3">
                   <NavLink
                     to="/users"
@@ -105,7 +105,7 @@ export const NavBar = () => {
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Search</Button>
+                  <Button>Search</Button>
                 </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
