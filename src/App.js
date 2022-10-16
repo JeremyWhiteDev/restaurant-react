@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+
 import { NavBar } from "./components/nav/NavBar.js";
 import {
   Route,

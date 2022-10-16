@@ -1,0 +1,13 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+$theme-colors: (
+    "moss": rgb(96, 108, 56)
+    );
+$theme-colors: (
+    "earth": rgb(40, 54, 24)
+    );
+$offcanvas-bg-color: tomato;
+@import "~bootstrap/scss/bootstrap";

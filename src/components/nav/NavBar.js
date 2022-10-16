@@ -10,6 +10,7 @@ import {
   Button,
 } from "react-bootstrap";
 import "./NavBar.css";
+import "./NavBar.scss";
 
 // define logic to find active link and change styling/addClassName
 export const NavBar = () => {
@@ -21,7 +22,13 @@ export const NavBar = () => {
   return (
     <>
       {["xxl"].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+        <Navbar
+          key={expand}
+          bg="earth"
+          expand={expand}
+          variant="dark"
+          className="mb-3"
+        >
           <Container fluid>
             <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -29,6 +36,7 @@ export const NavBar = () => {
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              bg="earth"
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
@@ -46,9 +54,33 @@ export const NavBar = () => {
                   >
                     Users
                   </NavLink>
-                  <a className="nav-link" onClick={() => navigate("/")}>
-                    Create Ticket
-                  </a>
+                  <NavLink
+                    to="/users"
+                    className={({ isActive }) => {
+                      console.log(isActive);
+                      return "nav-link" + (isActive ? " activater" : "");
+                    }}
+                  >
+                    Users
+                  </NavLink>
+                  <NavLink
+                    to="/users"
+                    className={({ isActive }) => {
+                      console.log(isActive);
+                      return "nav-link" + (isActive ? " activater" : "");
+                    }}
+                  >
+                    Users
+                  </NavLink>
+                  <NavLink
+                    to="/users"
+                    className={({ isActive }) => {
+                      console.log(isActive);
+                      return "nav-link" + (isActive ? " activater" : "");
+                    }}
+                  >
+                    Users
+                  </NavLink>
                   <NavLink to="/about"></NavLink>
                   <NavLink></NavLink>
                   <NavLink></NavLink>
